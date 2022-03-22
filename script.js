@@ -14,7 +14,7 @@ function createSquares(number){
         
         const square = document.createElement('div');
         square.classList.add('square');
-        square.style.padding = squareSize+"px";
+        square.style.padding = (squareSize/4)+"px";
         container.appendChild(square); 
 
         //Changes background-color when a square is hovered
