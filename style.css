@@ -23,8 +23,15 @@ body{
     border: 1px solid black;
 }
 
-#btn-change{
-    margin: 10px auto;
+.row{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+button{
     width: 100px;
     background-color: rgb(135, 148, 24);
     color: cornsilk;

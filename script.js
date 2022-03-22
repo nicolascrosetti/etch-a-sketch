@@ -26,20 +26,28 @@ function createSquares(number){
 
 const container = document.querySelector(".container");
 const btnChange = document.querySelector("#btn-change");
+const btnClear = document.querySelector("#btn-clear");
 
 createSquares(16);
+
 
 btnChange.addEventListener('click', function(){
     let newSize = 0;
 
     container.innerHTML = '';
-    newSize = window.prompt('Enter amount of squares: (max amount: 100)');
-    while(newSize > 100){
-        newSize = window.prompt('Enter amount of squares: (max amount: 100)');
+    newSize = window.prompt('Enter amount of squares per row: (Max amount: 100. Min amount: 2)');
+    while(newSize > 100 || newSize < 2){
+        newSize = window.prompt('Enter amount of squares per row: (Max amount: 100. Min amount: 2)');
     }
     createSquares(newSize);
 });
 
+btnClear.addEventListener('click', function(){
+    const squares = document.querySelectorAll(".square");
+    squares.forEach(square => {
+        square.style.backgroundColor = 'cornsilk';
+    });
+});
 
 
 
