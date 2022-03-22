@@ -1,0 +1,34 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container{
+    margin: 0 auto;
+    width: 750px;
+    height: 500px;
+    display: grid;
+    background-color: white;
+}
+
+.square{
+    background-color: cornsilk;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#btn-change{
+    margin: 10px auto;
+    width: 100px;
+    background-color: rgb(135, 148, 24);
+    color: cornsilk;
+    border: 1px solid cornsilk;
+    border-radius: 5%;
+    padding: 5px;
+}
